@@ -1,6 +1,9 @@
 // @dart=2.9
 
 import 'package:firebase_core/firebase_core.dart';
+import 'package:fitness_app/Weather/city_screen.dart';
+import 'package:fitness_app/Weather/loading_screen.dart';
+import 'package:fitness_app/Weather/location_screen.dart';
 import 'package:fitness_app/dashboard_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:fitness_app/welcome_screen.dart';
@@ -25,6 +28,9 @@ class FitnessApp extends StatelessWidget {
         LoginScreen.id: (context) => LoginScreen(),
         RegistrationScreen.id: (context) => RegistrationScreen(),
         DashboardScreen.id: (context) => DashboardScreen(),
+        LoadingScreen.id: (context) => LoadingScreen(),
+        LocationScreen.id: (context) => LocationScreen(),
+        CityScreen.id: (context) => CityScreen(),
       },
     );
   }
