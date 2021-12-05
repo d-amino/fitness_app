@@ -5,6 +5,7 @@ import 'package:fitness_app/Weather/city_screen.dart';
 import 'package:fitness_app/Weather/loading_screen.dart';
 import 'package:fitness_app/Weather/location_screen.dart';
 import 'package:fitness_app/dashboard_screen.dart';
+import 'package:fitness_app/video/videoplayer_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:fitness_app/welcome_screen.dart';
 import 'login_screen.dart';
@@ -31,6 +32,7 @@ class FitnessApp extends StatelessWidget {
         LoadingScreen.id: (context) => LoadingScreen(),
         LocationScreen.id: (context) => LocationScreen(),
         CityScreen.id: (context) => CityScreen(),
+        VideoPlayerScreen.id: (context) => VideoPlayerScreen(),
       },
     );
   }

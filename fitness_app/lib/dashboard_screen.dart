@@ -1,4 +1,5 @@
 import 'package:fitness_app/rounded_button.dart';
+import 'package:fitness_app/video/videoplayer_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:fitness_app/Weather/loading_screen.dart';
 
@@ -28,9 +29,12 @@ class _DashboardScreenState extends State<DashboardScreen> {
                 onPressed: () {
                   Navigator.pushNamed(context, LoadingScreen.id);
                 }),
-            RoundedButton(title: 'GPS', colour: Colors.black, onPressed: () {}),
             RoundedButton(
-                title: 'Videos', colour: Colors.black, onPressed: () {}),
+                title: 'Videos',
+                colour: Colors.black,
+                onPressed: () {
+                  Navigator.pushNamed(context, VideoPlayerScreen.id);
+                }),
           ],
         ),
       ),
